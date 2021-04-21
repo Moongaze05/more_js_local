@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hamburger</title>
+</head>
+
+<body>
+    <header>
+        <div class="greeting">
+            <h2>Make your own HAMBURGER!</h2>
+        </div>
+    </header>
+    <main>
+        <form>
+            <section class="check-size">
+                <div>
+                    <h3>Choose your size:</h3>
+                    <div>
+                        <input type="radio" name="size" id="big" data-price="100" data-calories="40">
+                        <label for="big">Big</label>
+                        <input type="radio" name="size" id="small" data-price="50" data-calories="20">
+                        <label for="small">Small</label>
+                    </div>
+                </div>
+            </section>
+            <section class="check-stuffing">
+                <div>
+                    <h3>Choose your stuffing:</h3>
+                    <div>
+                        <input type="checkbox" name="stuffing" id="cheese" data-price="10" data-calories="20">
+                        <label for="">Cheese</label>
+                        <input type="checkbox" name="stuffing" id="salad" data-price="20" data-calories="5">
+                        <label for="">Salad</label>
+                        <input type="checkbox" name="stuffing" id="potato" data-price="15" data-calories="10">
+                        <label for="">Potato</label>
+                    </div>
+                </div>
+            </section>
+            <section class="check-topping">
+                <div>
+                    <h3>Choose your topping(optional):</h3>
+                    <div>
+                        <input type="checkbox" name="topping" id="spices" data-price="15" data-calories="0">
+                        <label for="spices">Spices</label>
+                        <input type="checkbox" name="topping" id="mayo" data-price="20" data-calories="5">
+                        <label for="mayo">Mayo</label>
+                    </div>
+                </div>
+            </section>
+            <section class="conclusion">
+                <div>
+                    <div>
+                        <button type="button" id="make">Make hamburger</button>
+                        <input type="reset" value="Reset" id='reset'>
+                    </div>
+                </div>
+            </section>
+        </form>
+        <section class="result">
+            <div>
+                <h2 class="totalPrice">Total price: 0</h2>
+                <h2 class="totalCalories">Total calories: 0</h2>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

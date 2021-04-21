@@ -1,0 +1,19 @@
+* {
+    margin: 0 auto;
+}
+
+.greeting {
+    max-width: 1140px;
+    display: flex;
+}
+
+section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+section>div {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+}
