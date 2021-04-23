@@ -1,0 +1,43 @@
+.products {
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-cart {
+    width: 80px;
+    height: 30px;
+}
+
+.product-item {
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.buy-btn {
+    height: 30px;
+    border: 1px solid rgb(138, 120, 120);
+    border-radius: 7px;
+}
+
+.buy-btn:hover {
+    background-color: black;
+    color: rgb(233, 230, 230);
+    border-color: rgb(105, 100, 100);
+    -webkit-transition: background 0.25s linear 0s;
+    -moz-transition: background 0.25s linear 0s;
+    -o-transition: background 0.25s linear 0s;
+    transition: background 0.25s linear 0s;
+}
+
+h3 {
+    background-color: #7fdb5b;
+}
+
+p {
+    background-color: aquamarine;
+}
