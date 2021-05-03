@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> I was reading a magazine and looked up to see the first man say something which surprised me. '…Myrtle Cottage. It's got a large myrtle tree in the front garden.' The other man said something in a low voice, but his face was turned away from me. The
+        first man replied, and I read his lips again. 'His name is Colegate, and he uses it as a summer cottage. He's got some of the best old silver in England.' The other man shook his head and turned so I could see his face. I saw him say: 'Old silver
+        is no better than new. You can only melt it.' The first man's face became red. 'Only melt it! Don't be stupid! I can sell old silver at good prices. And that silver in Myrtle Cottage must be worth more than a thousand pounds. There's a silver
+        salt-cellar worth at least a hundred.' The other man looked at me while I was watching his friend speak. He had fair hair and blue eyes. 'That child is watching us,' he whispered. 'Be careful.'</p>
+
+    <script>
+        let str = document.querySelector('p');
+        str.innerText = str.innerText.replace(/(\W'\b)/igm, ' "');
+        str.innerText = str.innerText.replace(/'\W\b/igm, ' "');
+        str.innerText = str.innerText.replace(/\b\W'/igm, '"');
+        console.log(str);
+    </script>
+</body>
+
+</html>
